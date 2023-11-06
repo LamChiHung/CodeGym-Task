@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Surver Form</title>
+  </head>
+  <body>
+    <form action="" method="post">
+      <h1>Market Research Survey</h1>
+      <p>Pleas take a few moments to complete this satisfaction survey</p>
+      <hr />
+      <p>
+        What is your age range?
+        <br />
+        <select name="age" id="age">
+          <option value="<18"><18</option>
+          <option value="18-24">18-24</option>
+          <option value=">24">>24</option>
+        </select>
+      </p>
+      <p>
+        What is your income range?
+        <br />
+        <select name="income" id="income">
+          <option value="<18">$0 - $25,000</option>
+          <option value="18-24">>$25,000</option>
+        </select>
+      </p>
+      <p>  
+        Gender Identity <br>
+        <input type="radio" name="gender" id="gender">Male <br>
+        <input type="radio" name="gender" id="gender">Female <br>
+        <input type="radio" name="gender" id="gender">Nonbinary <br>
+        <input type="radio" name="gender" id="gender">Other <br>
+        <input type="text" name="" id="">
+      </p>
+      <p>
+        Which of the following products have your purchase in the last 2 months. Please check all apply.
+        <br>
+        <input type="checkbox" name="product" id="product">Product 1 <br>
+        <input type="checkbox" name="product" id="product">Product 2 <br>
+        <input type="checkbox" name="product" id="product">Product 3 <br>
+    </p>
+    <p>
+        How often would you use our new product? <br>
+        <input type="radio" name="time" id="time">Daily <br>
+        <input type="radio" name="time" id="time">Weekly <br>
+        <input type="radio" name="time" id="time">Monthly
+    </p>
+    <p>
+        What would you pay for the new product? <br>
+        <table>
+            <tr>
+                <td>$</td>
+                <td><input type="text" name="Dollars" id="">.</td>
+                <td><input type="text" name="Cents" id=""></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Dollars</td>
+                <td>Cents</td>
+            </tr>
+        </table>
+    </p>
+    <p>
+        What features would you like to see in the new product. <br>
+        <input type="text" name="" id="" style="height: 100px; width: 600px;">
+    </p>
+    <p>
+        PLease rate your level of agreement with the folllowing statements. <br>
+        <table border="1" style="border-collapse: collapse; text-align: center;">
+            <tr style="background-color: gray; border: 1px solid black;">
+                <td style="width: max-content;"> </td>
+                <td style="width: 180px;">Strongly Disagree</td>
+                <td style="width: 180px;">Disagree</td>
+                <td style="width: 180px;">Agree</td>
+                <td style="width: 180px;">Strongly Agree</td>
+            </tr>
+            <tr>
+                <td>Our product are prices fairly</td>
+                <td><input type="radio" name="1" id="1"><br>1</td>
+                <td><input type="radio" name="1" id="1"><br>2</td>
+                <td><input type="radio" name="1" id="1"><br>3</td>
+                <td><input type="radio" name="1" id="1"><br>4</td>
+            </tr>
+            <tr>
+                <td>Our product are highly quality</td>
+                <td><input type="radio" name="2" id="2"><br>1</td>
+                <td><input type="radio" name="2" id="2"><br>2</td>
+                <td><input type="radio" name="2" id="2"><br>3</td>
+                <td><input type="radio" name="2" id="2"><br>4</td>
+            </tr>
+            <tr>
+                <td>Your would recommend our product</td>
+                <td><input type="radio" name="3" id="3"><br>1</td>
+                <td><input type="radio" name="3" id="3"><br>2</td>
+                <td><input type="radio" name="3" id="3"><br>3</td>
+                <td><input type="radio" name="3" id="3"><br>4</td>
+            </tr>
+            
+        </table>
+    </p>
+    <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>

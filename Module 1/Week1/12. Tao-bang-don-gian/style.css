@@ -1,0 +1,39 @@
+table{
+    margin:auto;
+    width:max-content;
+    border-collapse: collapse;
+    
+}
+th,td{
+    padding: 5px;
+    width: 150px;
+}
+.head{
+    color: blue;
+    font-size: 20px;
+}
+.infomationleft{
+    color: blue;
+    text-align: left;
+}
+.infomationright{
+    color: blue;
+    text-align: right;
+}
+.day{
+    text-align: center;
+    background-color: yellow;
+    border: 1px solid black;
+}
+.tableheading{
+    background-color: orange;
+    text-align: center;
+    border: 1px solid black
+}
+.dataNo{
+    text-align: center;
+    border: 1px solid black
+}
+.data{
+    border:1px solid black
+}

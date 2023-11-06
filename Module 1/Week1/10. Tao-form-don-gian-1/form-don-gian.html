@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Đơn Giản</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <form action="form.com" method="post" >
+        <caption>SỞ THÍCH CỦA BẠN</caption>
+        <p></p>
+        <div class="superblock">
+            <div class="textblock">Họ và tên</div>
+            <div class="inputtext"><input type="text" name="yourname" id="yourname" placeholder="Ví dụ: Nguyễn Văn A" size="30"></div>
+        </div>
+        <p></p>
+        <div class="superblock">
+            <div class="textblock">Email</div>
+            <div class="inputtext"><input type="text" name="email" id="email" placeholder="Ví dụ: nguyenvana@gmail.com" size="30" ></div>
+        </div>
+        <p></p>
+        <div class="superblock">
+            <div class="textblock">Sở thích</div>
+            <table>
+                <tr>
+                    <td><input type="checkbox" name="" id="">Thể thao</td>
+                    <td><input type="checkbox" name="hobby" id="">Âm nhạc</td>
+                    <td><input type="checkbox" name="hobby" id="">Đọc sách</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="" id="">Lướt web</td>
+                    <td><input type="checkbox" name="hobby" id="">Chơi game</td>
+                    <td><input type="checkbox" name="hobby" id="">Điện ảnh</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="" id="">Du lịch</td>
+                </tr>
+            </table>
+        </div>
+        <div class="superblock">
+            <input type="submit" value="Gửi thông tin"> <pre style="font-size: 6px;"> </pre>
+            <input type="reset" value="Nhập lại">
+        </div>
+    </form>
+</body>
+</html>

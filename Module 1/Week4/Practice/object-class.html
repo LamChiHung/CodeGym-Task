@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Car{
+            constructor(id, name, color, brand) {
+                this.id = id;
+                this.name = name;
+                this.color = color;
+                this.capacity = capacity;
+            }
+            get getId(){
+                return this.id;
+            }
+            set setId(id){
+                this.id = id;
+            }
+            get getName(){
+                return this.name;
+            }
+            set setName(name){
+                this.name = name;
+            }
+            get getColor(){
+                return this.color;
+            }
+            set setColor(color){
+                this.color = color;
+            }
+            get getCapacity(){
+                return this.capacity;
+            }
+            set setCapacity(capacity){
+                this.capacity = capacity;
+            }
+        }
+
+        let mercedes = new Car(1, "Mercedes", "Black", "4");
+        let audi = new Car(2, "Audi", "Pink", "7")
+
+        console.log(mercedes, audi);
+
+
+    </script>
+</body>
+</html>

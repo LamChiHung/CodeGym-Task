@@ -1,0 +1,17 @@
+.superblock{
+    display:flex
+}
+.textblock{
+    width: 70px;
+}
+.inputtext{
+    border-color:white;
+}
+form{
+    margin-left: 30%;
+    margin-right: 35%;
+    border: 1px solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+}

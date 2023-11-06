@@ -1,0 +1,48 @@
+table{
+    border-collapse: collapse;
+    margin: auto;
+}
+td{
+    border: 1px solid black;
+    text-align: center;
+    width: 70px;
+    height: 40px;
+}
+.small{
+    font-size: 8px
+}
+.satday{
+    color: blue;
+    border: none;
+}
+.sunday{
+    color: red;
+    border: none;
+}
+.head{
+    color: blue;
+    font-size: 24px;
+}
+.label{
+ background-color: orange;
+ border: 1px solid white;
+ color: white;
+}
+.satlabel{
+    background-color: blue;
+    border: 1px solid white;
+    color: white;
+}
+.sunlabel{
+    background-color: red;
+    border: 1px solid white;
+    color: white;
+}
+.day{
+    border: none;
+}
+
+
+
+
+
