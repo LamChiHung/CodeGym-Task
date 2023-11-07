@@ -1,4 +1,4 @@
-public class Rectangle extends Shape {
+public class Rectangle extends Shape implements Colorable {
     private double width;
     private double height;
 
@@ -44,5 +44,10 @@ public class Rectangle extends Shape {
     @Override
     public String toString() {
         return "A rectangle with width: " + this.width + " and height: " + this.height + ", which is a subclass of " + super.toString();
+    }
+
+    @Override
+    public void howToColor() {
+        System.out.println("Color all four sides");
     }
 }
