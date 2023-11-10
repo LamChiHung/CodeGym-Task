@@ -21,5 +21,6 @@ public class Main {
         System.out.println("--------------------------------");
         productManager.edit(1, "Fish");
         productManager.display();
+        
     }
 }
