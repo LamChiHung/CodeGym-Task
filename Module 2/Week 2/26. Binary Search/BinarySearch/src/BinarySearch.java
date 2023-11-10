@@ -1,11 +1,11 @@
 public class BinarySearch {
-    public static int binnarySearch(int[] list, int key) {
-        int low = 0;
-        int hight = list.length - 1;
-        while (hight >= low) {
-            int mid = (hight + low) / 2;
+    public static int binnarySearch(int[] list, int left, int right, int key) {
+        int low = left;
+        int high = right;
+        while (high >= low) {
+            int mid = (right + left) / 2;
             if (key < list[mid]) {
-                hight = mid - 1;
+                high = mid - 1;
             } else if (key > list[mid]) {
                 low = mid + 1;
             } else {
