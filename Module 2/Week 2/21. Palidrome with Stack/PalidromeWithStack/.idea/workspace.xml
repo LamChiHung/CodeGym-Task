@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd479d25-14f2-46c7-a5aa-709f01b3b038" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../Week 1/10. Convert Number To String/ConvertNumberToString/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 1/10. Convert Number To String/ConvertNumberToString/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Week 1/5. Day - Of - Month/Day-Of-Month/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 1/5. Day - Of - Month/Day-Of-Month/.idea/vcs.xml" afterDir="false" />
-    </list>
+    <list default="true" id="dd479d25-14f2-46c7-a5aa-709f01b3b038" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,23 +23,23 @@
   <component name="OptimizeOnSaveOptions">
     <option name="myRunOnSave" value="true" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2XxmFRYkgj0NpHAXSkK9bFbf06v" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "settings.editor.selected.configurable": "configurable.group.language"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.language&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="PalidromeWithQueue" />
@@ -67,6 +64,7 @@
       <option name="presentableId" value="Default" />
       <updated>1699579000882</updated>
       <workItem from="1699579001876" duration="86000" />
+      <workItem from="1699583401634" duration="68000" />
     </task>
     <servers />
   </component>
