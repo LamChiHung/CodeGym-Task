@@ -30,8 +30,11 @@ public class Main {
             } else {
                 throw new IllegalTriangleException();
             }
+
         } catch (IllegalTriangleException e) {
             System.out.println(e);
+        } finally {
+            System.out.println("finally");
         }
     }
 }
