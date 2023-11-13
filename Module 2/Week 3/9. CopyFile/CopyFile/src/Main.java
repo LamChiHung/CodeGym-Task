@@ -9,6 +9,7 @@ public class Main {
         System.out.println("Hello world!");
         File fileSource = new File(".\\fileSource.txt");
         File fileTarget = new File(".\\fileTarget.txt");
+        File fileCopy = new File(".\\fileCopy.txt");
         if (! fileSource.exists()) {
             System.out.println("File chưa tồn tại, khởi tạo file mới");
             try (PrintWriter pw = new PrintWriter(fileSource)) {
@@ -32,6 +33,7 @@ public class Main {
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
+
     }
 
 
