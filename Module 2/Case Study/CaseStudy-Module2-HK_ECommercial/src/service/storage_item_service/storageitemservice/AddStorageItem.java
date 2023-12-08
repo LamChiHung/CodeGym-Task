@@ -5,6 +5,7 @@ import entity.storage.StorageItem;
 import service.storage_item_service.StorageItemService;
 import util.WriteAllData;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.concurrent.atomic.AtomicBoolean;
 
@@ -22,15 +23,42 @@ public class AddStorageItem {
         Scanner sc = new Scanner(System.in);
         System.out.println("Input product name");
         String name = sc.nextLine();
-        System.out.println("Input quantity");
-        int quantity = sc.nextInt();
-        sc.nextLine();
-        System.out.println("Input origin unit price");
-        int originUnitPrice = sc.nextInt();
-        sc.nextLine();
-        System.out.println("Input promote");
-        int promote = sc.nextInt();
-        sc.nextLine();
+        int quantity = 0;
+        do {
+            try {
+                Scanner sc1 = new Scanner(System.in);
+                System.out.println("Input quantity");
+                quantity = sc1.nextInt();
+                sc1.nextLine();
+                break;
+            } catch (InputMismatchException e) {
+                System.out.println("Please input the valid value");
+            }
+        } while (true);
+        int originUnitPrice = 0;
+        do {
+            try {
+                Scanner sc1 = new Scanner(System.in);
+                System.out.println("Input origin unit price");
+                originUnitPrice = sc1.nextInt();
+                sc1.nextLine();
+                break;
+            } catch (InputMismatchException e) {
+                System.out.println("Please input the valid value");
+            }
+        } while (true);
+        int promote = 0;
+        do {
+            try {
+                Scanner sc1 = new Scanner(System.in);
+                System.out.println("Input promote");
+                promote = sc1.nextInt();
+                sc1.nextLine();
+                break;
+            } catch (InputMismatchException e) {
+                System.out.println("Please input the valid value");
+            }
+        } while (true);
         AtomicBoolean isValid = new AtomicBoolean(true);
         StorageItem storageItem = new StorageItem(name, quantity, originUnitPrice, promote);
         storageItemService.getStorageItemList().forEach((value) -> {

@@ -27,7 +27,7 @@ public class StorageItem {
             }
         });
         if (! isProductExist.get()) {
-            System.out.println("The product is not exit in HK_Ecommercial, please register this product!");
+            System.out.println("The product is not exist in HK_Ecommercial, please register this product!");
             System.out.println("Input product name:");
             Scanner sc = new Scanner(System.in);
             String productName = sc.nextLine();
