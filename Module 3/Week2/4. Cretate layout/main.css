@@ -1,0 +1,89 @@
+* {
+  /* border: 1px solid black;
+  border-collapse: collapse; */
+  font-family: "Times New Roman", Times, serif;
+  /* font-size: 2rem; */
+  text-align: center;
+  box-sizing: border-box;
+}
+body {
+  background-color: grey;
+}
+p {
+  height: fit-content;
+  background-color: white;
+  border: none;
+  font-size: 2rem;
+  align-items: center;
+}
+header {
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  background-color: white;
+  border: 1px solid black;
+}
+nav {
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  background-color: white;
+  border: 1px solid black;
+}
+.out {
+  height: fit-content;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  background-color: white;
+  margin: 1rem;
+  border: 1px solid black;
+}
+.in {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  margin: 1rem;
+  /* border: none; */
+  height: 25rem;
+  border: 1px solid black;
+  /* justify-content: center;
+  align-items: center; */
+}
+section {
+  display: flex;
+  margin-bottom: 0.5rem;
+  flex: 1;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+}
+article {
+  margin-top: 0.5rem;
+  flex: 1;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+aside {
+  flex: 1;
+  border: 1px solid black;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer {
+  margin: 1rem;
+  border: 1px solid black;
+  height: 5rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
