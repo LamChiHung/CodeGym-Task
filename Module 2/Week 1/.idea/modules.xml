@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/1. System-Time/1. System-Time.iml" filepath="$PROJECT_DIR$/1. System-Time/1. System-Time.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10. Convert Number To String/10. Convert Number To String.iml" filepath="$PROJECT_DIR$/10. Convert Number To String/10. Convert Number To String.iml" />
+      <module fileurl="file://$PROJECT_DIR$/11. Prime Number/11. Prime Number.iml" filepath="$PROJECT_DIR$/11. Prime Number/11. Prime Number.iml" />
+      <module fileurl="file://$PROJECT_DIR$/12. Interest/12. Interest.iml" filepath="$PROJECT_DIR$/12. Interest/12. Interest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/13. GCD/13. GCD.iml" filepath="$PROJECT_DIR$/13. GCD/13. GCD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/14. Geometry/14. Geometry.iml" filepath="$PROJECT_DIR$/14. Geometry/14. Geometry.iml" />
+      <module fileurl="file://$PROJECT_DIR$/15. shape menu/15. shape menu.iml" filepath="$PROJECT_DIR$/15. shape menu/15. shape menu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/16. Prime Number/16. Prime Number.iml" filepath="$PROJECT_DIR$/16. Prime Number/16. Prime Number.iml" />
+      <module fileurl="file://$PROJECT_DIR$/17. 100 Prime Numbers/17. 100 Prime Numbers.iml" filepath="$PROJECT_DIR$/17. 100 Prime Numbers/17. 100 Prime Numbers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/18. Reverse Array/18. Reverse Array.iml" filepath="$PROJECT_DIR$/18. Reverse Array/18. Reverse Array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/19. Find In Array/19. Find In Array.iml" filepath="$PROJECT_DIR$/19. Find In Array/19. Find In Array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2. Variable - Datatype/2. Variable - Datatype.iml" filepath="$PROJECT_DIR$/2. Variable - Datatype/2. Variable - Datatype.iml" />
+      <module fileurl="file://$PROJECT_DIR$/20. FindMaxInArray/20. FindMaxInArray.iml" filepath="$PROJECT_DIR$/20. FindMaxInArray/20. FindMaxInArray.iml" />
+      <module fileurl="file://$PROJECT_DIR$/21. Convert C And F/21. Convert C And F.iml" filepath="$PROJECT_DIR$/21. Convert C And F/21. Convert C And F.iml" />
+      <module fileurl="file://$PROJECT_DIR$/22. Find Min IIn Array/22. Find Min IIn Array.iml" filepath="$PROJECT_DIR$/22. Find Min IIn Array/22. Find Min IIn Array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/23. Delete element in array/23. Delete element in array.iml" filepath="$PROJECT_DIR$/23. Delete element in array/23. Delete element in array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/24. Insert element in array/24. Insert element in array.iml" filepath="$PROJECT_DIR$/24. Insert element in array/24. Insert element in array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/25. Merge Two Arrays/25. Merge Two Arrays.iml" filepath="$PROJECT_DIR$/25. Merge Two Arrays/25. Merge Two Arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/26. Find Max In Array/26. Find Max In Array.iml" filepath="$PROJECT_DIR$/26. Find Max In Array/26. Find Max In Array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/27. Find Min In Array/27. Find Min In Array.iml" filepath="$PROJECT_DIR$/27. Find Min In Array/27. Find Min In Array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/28. Count passed students/28. Count passed students.iml" filepath="$PROJECT_DIR$/28. Count passed students/28. Count passed students.iml" />
+      <module fileurl="file://$PROJECT_DIR$/29. Sum column/29. Sum column.iml" filepath="$PROJECT_DIR$/29. Sum column/29. Sum column.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3. Operator - Expression/3. Operator - Expression.iml" filepath="$PROJECT_DIR$/3. Operator - Expression/3. Operator - Expression.iml" />
+      <module fileurl="file://$PROJECT_DIR$/30. Sum diagonal line/30. Sum diagonal line.iml" filepath="$PROJECT_DIR$/30. Sum diagonal line/30. Sum diagonal line.iml" />
+      <module fileurl="file://$PROJECT_DIR$/31. Count char/31. Count char.iml" filepath="$PROJECT_DIR$/31. Count char/31. Count char.iml" />
+      <module fileurl="file://$PROJECT_DIR$/32. Rectangle/32. Rectangle.iml" filepath="$PROJECT_DIR$/32. Rectangle/32. Rectangle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/33. QuadraticEquation/33. QuadraticEquation.iml" filepath="$PROJECT_DIR$/33. QuadraticEquation/33. QuadraticEquation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/34. Stop Watch/34. Stop Watch.iml" filepath="$PROJECT_DIR$/34. Stop Watch/34. Stop Watch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/35. Fan/35. Fan.iml" filepath="$PROJECT_DIR$/35. Fan/35. Fan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/36. Stactic Method/36. Stactic Method.iml" filepath="$PROJECT_DIR$/36. Stactic Method/36. Stactic Method.iml" />
+      <module fileurl="file://$PROJECT_DIR$/37. Static Property/37. Static Property.iml" filepath="$PROJECT_DIR$/37. Static Property/37. Static Property.iml" />
+      <module fileurl="file://$PROJECT_DIR$/38. Access Modifier/38. Access Modifier.iml" filepath="$PROJECT_DIR$/38. Access Modifier/38. Access Modifier.iml" />
+      <module fileurl="file://$PROJECT_DIR$/4. Linear - Equation - Resolver/4. Linear - Equation - Resolver.iml" filepath="$PROJECT_DIR$/4. Linear - Equation - Resolver/4. Linear - Equation - Resolver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/5. Day - Of - Month/5. Day - Of - Month.iml" filepath="$PROJECT_DIR$/5. Day - Of - Month/5. Day - Of - Month.iml" />
+      <module fileurl="file://$PROJECT_DIR$/6. Leap - Year/6. Leap - Year.iml" filepath="$PROJECT_DIR$/6. Leap - Year/6. Leap - Year.iml" />
+      <module fileurl="file://$PROJECT_DIR$/7. BMI/7. BMI.iml" filepath="$PROJECT_DIR$/7. BMI/7. BMI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/8. Hello/8. Hello.iml" filepath="$PROJECT_DIR$/8. Hello/8. Hello.iml" />
+      <module fileurl="file://$PROJECT_DIR$/9. Convert Money/9. Convert Money.iml" filepath="$PROJECT_DIR$/9. Convert Money/9. Convert Money.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Week 1.iml" filepath="$PROJECT_DIR$/.idea/Week 1.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,32 @@
+@media (max-width: 1023px) {
+  .login-container-content-item-2 {
+    justify-content: center;
+  }
+
+  .login-container-content-item-1 {
+    display: none;
+  }
+
+  .login-container-content-item-2 {
+    width: 60%;
+  }
+}
+@media (max-width: 540px) {
+  .login-header-bar-item-item-login-text {
+    display: none;
+  }
+  .login-header-bar {
+    width: 90%;
+    padding: 0px 0px;
+  }
+  .login-header-bar-item {
+    width: fit-content;
+    min-width: 0px;
+  }
+  .login-container-content-item-2-form-header-item2-QRtext {
+    display: none;
+  }
+  .login-container-content-item-2-form-header-item2 {
+    flex: 1;
+  }
+}
