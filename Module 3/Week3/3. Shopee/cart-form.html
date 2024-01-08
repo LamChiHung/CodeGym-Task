@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./asset/css/themify-icons/themify-icons.css" />
+    <link rel="stylesheet" href="./asset/css/cart-form.css" />
+  </head>
+  <body>
+    
+    <!-- Body -->
+    <div class="cart-body">
+      <div class="cart-body-container">
+        <div class="cart-body-container-header">
+          <div class="cart-body-container-header-productName">Sản phẩm</div>
+          <div class="cart-body-container-header-category">Phân loại</div>
+          <div class="cart-body-container-header-unitPrice">Đơn giá</div>
+          <div class="cart-body-container-header-quantity">Số lượng</div>
+          <div class="cart-body-container-header-totalPrice">Số tiền</div>
+          <div class="cart-body-container-header-action">Thao tác</div>
+        </div>
+        <div class="cart-body-container-content">
+          <div class="cart-body-container-content-row header">
+            <div
+              class="cart-body-container-content-row-shopIcon ti-briefcase"
+            ></div>
+            <div class="cart-body-container-content-row-shopName">Vannesa</div>
+          </div>
+          <!-- Begin product -->
+          <form action="">
+            <div class="cart-body-container-content-row content">
+              <div class="cart-body-container-header-productName content">
+                <img
+                  class="cart-body-container-header-productName-img"
+                  src="./asset/img/check.png"
+                  alt=""
+                />
+                <p class="cart-body-container-header-productName-text">
+                  Chuột logitech G703
+                </p>
+              </div>
+              <div class="cart-body-container-header-category content">
+                Đồ điện tử
+              </div>
+              <div class="cart-body-container-header-unitPrice content">
+                <div class="cart-body-container-header-unitPrice-origin">
+                  <sub>đ</sub>20.000
+                </div>
+                <div class="cart-body-container-header-unitPrice-modify">
+                  <sub>đ</sub>18.000
+                </div>
+              </div>
+              <div class="cart-body-container-header-quantity content">
+                <div class="cart-body-container-header-quantity-container">
+                  <button
+                    class="minusButton"
+                    onclick="decreaseQuantity()"
+                    type="button"
+                  >
+                    -
+                  </button>
+                  <input
+                    type="text"
+                    name="quantity"
+                    class="quantityValue"
+                    id="quantity"
+                    onkeyup="value=value.replace(/[^\d]/g,'')"
+                    value="1"
+                    
+                  />
+                  <button
+                    class="plusButton"
+                    type="button"
+                    onclick="increaseQuantity()"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+              <div class="cart-body-container-header-totalPrice content">
+                <sub>đ</sub>18.000
+              </div>
+              <div class="cart-body-container-header-action content">Xóa</div>
+            </div>
+          </form>
+          <!-- End product -->
+          <!-- Begin product -->
+          <form action="">
+            <div class="cart-body-container-content-row content">
+              <div class="cart-body-container-header-productName content">
+                <img
+                  class="cart-body-container-header-productName-img"
+                  src="./asset/img/check.png"
+                  alt=""
+                />
+                <p class="cart-body-container-header-productName-text">
+                  Chuột logitech G703
+                </p>
+              </div>
+              <div class="cart-body-container-header-category content">
+                Đồ điện tử
+              </div>
+              <div class="cart-body-container-header-unitPrice content">
+                <div class="cart-body-container-header-unitPrice-origin">
+                  <sub>đ</sub>20.000
+                </div>
+                <div class="cart-body-container-header-unitPrice-modify">
+                  <sub>đ</sub>18.000
+                </div>
+              </div>
+              <div class="cart-body-container-header-quantity content">
+                <div class="cart-body-container-header-quantity-container">
+                  <button
+                    class="minusButton"
+                    onclick="decreaseQuantity()"
+                    type="button"
+                  >
+                    -
+                  </button>
+                  <input
+                    type="text"
+                    name="quantity"
+                    id="quantity"
+                    onkeyup="value=value.replace(/[^\d]/g,'')"
+                    value="1"
+                    class="quantityValue"
+                    
+                  />
+                  <button
+                    class="plusButton"
+                    type="button"
+                    onclick="increaseQuantity()"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+              <div class="cart-body-container-header-totalPrice content">
+                <sub>đ</sub>18.000
+              </div>
+              <div class="cart-body-container-header-action content">Xóa</div>
+            </div>
+          </form>
+          <!-- End product -->
+        </div>
+        <div class="cart-body-container-footer">
+          <div class="cart-body-container-footer-container">
+            <div class="cart-body-container-footer-container-cartTotalMoney">
+              <p
+                class="cart-body-container-footer-container-cartTotalMoney-info"
+              >
+                Tổng thanh toán (0 Sản phẩm):
+              </p>
+              <p
+                class="cart-body-container-footer-container-cartTotalMoney-money"
+              >
+                <sub>đ</sub>18.000
+              </p>
+            </div>
+            <div class="cart-body-container-footer-container-payment">
+              <button type="button">Mua Hàng</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="./asset/js/cart.js"></script>
+  </body>
+</html>

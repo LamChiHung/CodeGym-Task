@@ -57,7 +57,10 @@
         </div>
         <div class="cart-title-container-right">
           <div class="cart-title-container-right-container">
-            <input type="text" class="cart-title-container-right-container-searchBar"/>
+            <input
+              type="text"
+              class="cart-title-container-right-container-searchBar"
+            />
             <div class="cart-title-container-right-container-searchIcon">
               <span class="ti-search"></span>
             </div>
@@ -84,47 +87,122 @@
             ></div>
             <div class="cart-body-container-content-row-shopName">Vannesa</div>
           </div>
-          <div class="cart-body-container-content-row content">
-            <div class="cart-body-container-header-productName content">
-              <img
-                class="cart-body-container-header-productName-img"
-                src="./asset/img/check.png"
-                alt=""
-              />
-              <p class="cart-body-container-header-productName-text">
-                Chuột logitech G703
-              </p>
-            </div>
-            <div class="cart-body-container-header-category content">
-              Đồ điện tử
-            </div>
-            <div class="cart-body-container-header-unitPrice content">
-              <div class="cart-body-container-header-unitPrice-origin">
-                <sub>đ</sub>20.000
+          <!-- Begin product -->
+          <form action="">
+            <div class="cart-body-container-content-row content">
+              <div class="cart-body-container-header-productName content">
+                <img
+                  class="cart-body-container-header-productName-img"
+                  src="./asset/img/check.png"
+                  alt=""
+                />
+                <p class="cart-body-container-header-productName-text">
+                  Chuột logitech G703
+                </p>
               </div>
-              <div class="cart-body-container-header-unitPrice-modify">
+              <div class="cart-body-container-header-category content">
+                Đồ điện tử
+              </div>
+              <div class="cart-body-container-header-unitPrice content">
+                <div class="cart-body-container-header-unitPrice-origin">
+                  <sub>đ</sub>20.000
+                </div>
+                <div class="cart-body-container-header-unitPrice-modify">
+                  <sub>đ</sub><p>18000</p>
+                </div>
+              </div>
+              <div class="cart-body-container-header-quantity content">
+                <div class="cart-body-container-header-quantity-container">
+                  <button
+                    class="minusButton"
+                    onclick="decreaseQuantity()"
+                    type="button"
+                  >
+                    -
+                  </button>
+                  <input
+                    type="text"
+                    name="quantity"
+                    class="quantityValue"
+                    id="quantity"
+                    onkeyup="value=value.replace(/[^\d]/g,'')"
+                    value="1"
+                    
+                  />
+                  <button
+                    class="plusButton"
+                    type="button"
+                    onclick="increaseQuantity()"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+              <div class="cart-body-container-header-totalPrice content">
                 <sub>đ</sub>18.000
               </div>
+              <div class="cart-body-container-header-action content">Xóa</div>
             </div>
-            <div class="cart-body-container-header-quantity content">
-              <div class="cart-body-container-header-quantity-container">
-                <button onclick="decreaseQuantity()" type="button">-</button>
-                <input
-                  type="text"
-                  name="quantity"
-                  id="quantity"
-                  onkeyup="value=value.replace(/[^\d]/g,'')"
-                  value="1"
-                  onblur="checkQuantity()"
+          </form>
+          <!-- End product -->
+          <!-- Begin product -->
+          <form action="">
+            <div class="cart-body-container-content-row content">
+              <div class="cart-body-container-header-productName content">
+                <img
+                  class="cart-body-container-header-productName-img"
+                  src="./asset/img/check.png"
+                  alt=""
                 />
-                <button type="button" onclick="increaseQuantity()">+</button>
+                <p class="cart-body-container-header-productName-text">
+                  Chuột logitech G703
+                </p>
               </div>
+              <div class="cart-body-container-header-category content">
+                Đồ điện tử
+              </div>
+              <div class="cart-body-container-header-unitPrice content">
+                <div class="cart-body-container-header-unitPrice-origin">
+                  <sub>đ</sub>20.000
+                </div>
+                <div class="cart-body-container-header-unitPrice-modify">
+                  <sub>đ</sub><p>18000</p>
+                </div>
+              </div>
+              <div class="cart-body-container-header-quantity content">
+                <div class="cart-body-container-header-quantity-container">
+                  <button
+                    class="minusButton"
+                    onclick="decreaseQuantity()"
+                    type="button"
+                  >
+                    -
+                  </button>
+                  <input
+                    type="text"
+                    name="quantity"
+                    id="quantity"
+                    onkeyup="value=value.replace(/[^\d]/g,'')"
+                    value="1"
+                    class="quantityValue"
+                    
+                  />
+                  <button
+                    class="plusButton"
+                    type="button"
+                    onclick="increaseQuantity()"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+              <div class="cart-body-container-header-totalPrice content">
+                <sub>đ</sub><p>18000</p>
+              </div>
+              <div class="cart-body-container-header-action content">Xóa</div>
             </div>
-            <div class="cart-body-container-header-totalPrice content">
-              <sub>đ</sub>18.000
-            </div>
-            <div class="cart-body-container-header-action content">Xóa</div>
-          </div>
+          </form>
+          <!-- End product -->
         </div>
         <div class="cart-body-container-footer">
           <div class="cart-body-container-footer-container">
