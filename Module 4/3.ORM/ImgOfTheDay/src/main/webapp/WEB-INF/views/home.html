@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="/resources/css/home.css"/>
+</head>
+<body>
+<div class="container">
+    <div class="img-container">
+        <img id="img-of-the-day"/>
+    </div>
+    <div class="comment-container">
+        <div class="comment-container-day-search">
+            <form
+                    method="get"
+                    action="/search">
+                <input
+                        type="date" name="from"
+                        id=""/>
+                <input
+                        type="date" name="to"
+                        id=""/>
+                <button type="submit">Search
+                </button>
+            </form>
+        </div>
+        <form th:action="@{/create}"
+              th:object="${comment}"
+              method="post"
+              class="comment-container-new">
+            <label for="author"
+                   class="comment-container-new-author"
+            >Author:</label
+            >
+            <input th:field="*{author}"
+                   type="text"
+                   name="author"
+                   id="author"/>
+            <label class="comment-container-new-comment">Comment:</label>
+            <input th:field="*{feedback}"
+                   type="text" name="feedback"
+                   id=""/>
+            <label class="comment-container-new-score">Rating
+                <i class="fa-solid fa-star my-star"></i>:</label>
+            <div class="radio-group">
+                <input th:field="*{score}"
+                       th:value="1"
+                       class="radio-group-radio"
+                       type="radio" name="score"
+                       id="1" value="1"/>
+                <label class="rating-star"
+                       for="1"> <i
+                        class="fa-solid fa-star my-star"> </i></label>
+                <input th:field="*{score}"
+                       th:value="2"
+                       class="radio-group-radio"
+                       type="radio" name="score"
+                       id="2" value="2"/>
+                <label class="rating-star"
+                       for="2"> <i
+                        class="fa-solid fa-star my-star"> </i></label>
+                <input th:field="*{score}"
+                       th:value="3"
+                       class="radio-group-radio"
+                       type="radio" name="score"
+                       id="3" value="3"/>
+                <label class="rating-star"
+                       for="3"> <i
+                        class="fa-solid fa-star my-star"> </i></label>
+                <input th:field="*{score}"
+                       th:value="4"
+                       class="radio-group-radio"
+                       type="radio" name="score"
+                       id="4" value="4"/>
+                <label class="rating-star"
+                       for="4"> <i
+                        class="fa-solid fa-star my-star"> </i></label>
+                <input th:field="*{score}"
+                       th:value="5"
+                       class="radio-group-radio"
+                       type="radio" name="score"
+                       id="5" value="5"/>
+                <label class="rating-star"
+                       for="5"> <i
+                        class="fa-solid fa-star my-star"> </i></label>
+            </div>
+            <input type="submit" value="Send">
+        </form>
+        <div class="comment-container-container">
+            <div th:each="comment:${comments}"
+                 class="comment-container-item">
+                <div class="comment-container-item-content">
+                    <div th:text="${comment.getDateTime()}"
+                         class="comment-container-item-time">
+                    </div>
+                    <div th:text="${comment.getAuthor()}"
+                         class="comment-container-item-author">
+
+                    </div>
+                    <div th:text="${comment.getFeedback()}"
+                         class="comment-container-item-comment">
+
+                    </div>
+                    <div
+                            class="comment-container-item-score">
+                        Rating: <span
+                            th:text="${comment.getScore()}"></span><i
+                            class="fa-solid fa-star my-star"></i>
+                    </div>
+                </div>
+                <div class="comment-container-item-action">
+                    <a class="comment-container-item-action-edit"
+                       th:href="@{/edit/{commentId}(commentId=${comment.getId()})}">Edit</a>
+                    <a class="comment-container-item-action-delete"
+                       th:href="@{/delete/{id}(id=${comment.getId()})}">Delete</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script
+        src="https://kit.fontawesome.com/c7e91ec87e.js"
+        crossorigin="anonymous"
+></script>
+
+<script>
+    let query =
+        "https://api.nasa.gov/planetary/apod?api_key=E1g9j1MKakOUoCfYJfzSh3RmGKOR5Rze9ScFwmGn";
+    let request = new XMLHttpRequest();
+    request.open("GET", query);
+    request.onload = function () {
+        if (request.status === 200) {
+            let response = JSON.parse(request.responseText);
+            document
+                .getElementById("img-of-the-day")
+                .setAttribute("src", response.url);
+        }
+    };
+    request.send();
+</script>
+</body>
+</html>
