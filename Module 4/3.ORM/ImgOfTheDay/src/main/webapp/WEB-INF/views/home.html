@@ -19,12 +19,12 @@
             <form
                     method="get"
                     action="/search">
-                <input
-                        type="date" name="from"
-                        id=""/>
-                <input
-                        type="date" name="to"
-                        id=""/>
+                <input required
+                       type="date" name="from"
+                       id=""/>
+                <input required
+                       type="date" name="to"
+                       id=""/>
                 <button type="submit">Search
                 </button>
             </form>
@@ -95,7 +95,7 @@
             <div th:each="comment:${comments}"
                  class="comment-container-item">
                 <div class="comment-container-item-content">
-                    <div th:text="${comment.getDateTime()}"
+                    <div th:text="${#temporals.format(comment.getDateTime(), 'dd-MM-yyyy HH:mm')}"
                          class="comment-container-item-time">
                     </div>
                     <div th:text="${comment.getAuthor()}"

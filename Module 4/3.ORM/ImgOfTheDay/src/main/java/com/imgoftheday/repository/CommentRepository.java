@@ -1,34 +1,21 @@
 package com.imgoftheday.repository;
 
 import com.imgoftheday.entity.Comment;
-import org.hibernate.HibernateException;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
-import org.hibernate.cfg.Configuration;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
+import javax.transaction.Transactional;
 import java.time.LocalDateTime;
 import java.util.List;
 
 @Repository
-
+@Transactional
 public class CommentRepository implements IRepository <Comment> {
-    private static SessionFactory sessionFactory;
-    private static EntityManager entityManager;
+    @PersistenceContext
+    private EntityManager entityManager;
 
-    static {
-        try {
-            sessionFactory = new Configuration()
-                    .configure("hibernate.conf.xml")
-                    .buildSessionFactory();
-            entityManager = sessionFactory.createEntityManager();
-        } catch (HibernateException e) {
-            e.printStackTrace();
-        }
-    }
 
     @Override
     public List <Comment> getAll() {
@@ -57,52 +44,21 @@ public class CommentRepository implements IRepository <Comment> {
 
     @Override
     public Comment getById(int id) {
-        String query = "SELECT c FROM Comment AS c WHERE c.id = :id";
-        TypedQuery <Comment> typedQuery = entityManager.createQuery(query, Comment.class);
-        typedQuery.setParameter("id", id);
-        return typedQuery.getSingleResult();
+        return entityManager.find(Comment.class, id);
     }
 
     @Override
     public void save(Comment comment) {
-        Transaction transaction = null;
-        try {
-            Session session = sessionFactory.openSession();
-            transaction = session.beginTransaction();
-            Comment origin = null;
-            if (comment.getId() == 0) {
-                origin = new Comment();
-            } else {
-                origin = getById(comment.getId());
-            }
-            origin.setAuthor(comment.getAuthor());
-            origin.setFeedback(comment.getFeedback());
-            origin.setDateTime(comment.getDateTime());
-            origin.setScore(comment.getScore());
-            session.save(origin);
-            transaction.commit();
-        } catch (Exception e) {
-            e.printStackTrace();
-            if (transaction != null) {
-                transaction.rollback();
-            }
+        if (comment.getId() == 0) {
+            entityManager.persist(comment);
+        } else {
+            entityManager.merge(comment);
         }
     }
 
     @Override
     public void delete(int id) {
-        Transaction transaction = null;
-        try {
-            Session session = sessionFactory.openSession();
-            transaction = session.beginTransaction();
-            Comment origin = getById(id);
-            session.remove(origin);
-            transaction.commit();
-        } catch (Exception e) {
-            e.printStackTrace();
-            if (transaction != null) {
-                transaction.rollback();
-            }
-        }
+        Comment comment = getById(id);
+        entityManager.remove(comment);
     }
 }
