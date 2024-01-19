@@ -16,6 +16,8 @@
     </label>
     <input type="text" id="name"
            th:field="*{name}">
+    <p th:if="${#fields.hasErrors('name')}"
+       th:errors="*{name}"></p>
     <label for="email">
         Email:
     </label>
@@ -26,6 +28,8 @@
     </label>
     <input type="text" id="address"
            th:field="*{address}">
+    <p th:if="${#fields.hasErrors('address')}"
+       th:errors="*{address}"></p>
     <button type="submit">Save</button>
 </form>
 <form method="post"
@@ -38,6 +42,8 @@
     </label>
     <input type="text" id="name"
            th:field="*{name}">
+    <p th:if="${#fields.hasErrors('name')}"
+       th:errors="*{name}"></p>
     <label for="email">
         Email:
     </label>

@@ -3,11 +3,13 @@ package com.customermanagerment.controller;
 
 import com.customermanagerment.entity.Customer;
 import com.customermanagerment.service.ICustomerService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -51,7 +53,10 @@ public class CustomerController {
     }
 
     @PostMapping("/create")
-    public String add(@ModelAttribute("customer") Customer customer) {
+    public String add(@Valid @ModelAttribute("customer") Customer customer, BindingResult bindingResult) {
+        if (bindingResult.hasErrors()) {
+            return "/form";
+        }
         customerService.save(customer);
         return "redirect:/home";
     }
@@ -65,7 +70,10 @@ public class CustomerController {
     }
 
     @PostMapping("/edit")
-    public String edit(@ModelAttribute("customer") Customer customer) {
+    public String edit(@Valid @ModelAttribute("customer") Customer customer, BindingResult bindingResult) {
+        if (bindingResult.hasErrors()) {
+            return "/form";
+        }
         customerService.save(customer);
         return "redirect:/home";
     }
